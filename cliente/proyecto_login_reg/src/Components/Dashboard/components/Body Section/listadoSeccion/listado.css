@@ -1,0 +1,83 @@
+    :root{
+        --primaryColor: hsl(310, 74%, 56%);
+        --hoverColor: hsl(91, 67%, 86%);
+        --paleGreen: hsl(97, 28%, 91%);
+        --whiteColor: hsl(0, 55%, 96%);
+        --blackColor: hsl(0,0%,18%);
+        --greyText: hsl(0, 0%, 75%);
+        --inputColor: hsl(330, 63%, 64%);
+        --itemCardColor: hsl(120, 5%, 88%);
+        --itemCardHover:hsl(120, 27%, 87%);
+        /*typography*/
+    
+        --biggestFontSize: 2.5rem; 
+        --h1FontSize: 1.5rem;
+        --h2FontSize: 1.25rem;
+        --h3FontSize: 1rem;
+        --normalFontSize: .938rem;
+        --smallFontSize: .813rem;
+        --smallestFontSize: .75rem;
+    }
+
+    .listadoSection{
+        flex-basis: 70%;
+        .heading{
+            width: 100%;
+            justify-content: space-between;
+
+        .h1{
+        font-size: var(--h2FontSize);
+        color: var(--blackColor); 
+        font-weight: 700;
+        }
+
+        .btn{
+            border: 1px solid transparent;
+            font-weight: 500;
+        }
+        .btn:hover{
+            border: 1px solid var(--primaryColor);
+        }
+    }
+    .secContainer{
+        width: 100%;
+        margin: 1rem 0;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .singleItem{
+            position: relative;
+            width: 150px;
+            height: 210px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: 10px;
+            background: var(--itemCardColor);
+
+            &:hover{
+                background-color: var(--itemCardHover);
+                box-shadow: 0 2px 2px var(--inputColor);
+            }
+
+            .img{
+                max-width: 100px;
+            }
+
+            .icon{
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                color: var(--primaryColor);
+            }
+
+            .h3{
+                font-size: var(--h3FontSize);
+                color: var(--blackColor);
+                padding: 1rem 0;
+            }
+        }
+    }
+}
